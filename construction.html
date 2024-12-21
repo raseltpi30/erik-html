@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .single-service {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .single-service::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .single-service h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            z-index: 2;
+        }
+
+        .single-box {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px 40px;
+            width: 80%;
+            margin: -50px auto 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        .single-box p {
+            font-size: 18px;
+            color: #000;
+        }
+
+        .single-box li {
+            line-height: 25px;
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .single-service h1 {
+                font-size: 2rem;
+                text-align: center;
+            }
+
+            .single-box {
+                padding: 15px;
+                width: unset;
+                margin: unset;
+            }
+
+            .single-box p {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="single-service"
+        style="background-image: url('https://static1.squarespace.com/static/6682192d1022a0098a1c29d9/t/66bf31e4ba8584418624bb5e/1723806196231/Deep+Cleaning.jpg');">
+        <h1>Deep Cleaning</h1>
+    </div>
+
+    <div class="single-box">
+        <div class="single-service-content">
+            <h2>Construction Cleaning</h2>
+            <p>At Crystal Clean Sydney, we specialise in providing expert Post Construction Cleaning services, ensuring
+                your newly built or renovated space is clean, safe, and ready for occupancy. Whether it's a new
+                commercial space, residential property, or a recent renovation, our post-construction cleaning team
+                handles the final touch-ups to make your property shine.</p>
+
+            <h3>What We Offer:</h3>
+            <ul>
+                <li><strong>Thorough Dust Removal:</strong> Our team removes dust from every corner, including walls,
+                    floors, vents, and surfaces, leaving your space clean and free of construction residue.</li>
+                <li><strong>Window and Glass Cleaning:</strong> We remove paint splatters, adhesive residue, and
+                    construction dust from windows and glass to ensure clarity and shine.</li>
+                <li><strong>Detailed Surface Cleaning:</strong> All countertops, cabinets, and fixtures are carefully
+                    wiped down to eliminate any leftover debris and dust, leaving surfaces spotless.</li>
+                <li><strong>Floor and Carpet Cleaning:</strong> We remove any dirt, dust, or debris from floors and
+                    carpets, ensuring that the space is pristine and safe to walk on.</li>
+                <li><strong>Post-Construction Waste Removal:</strong> While we don’t remove large construction
+                    materials, we clear smaller debris, dust, and leftover construction materials from your newly
+                    completed space.</li>
+            </ul>
+
+            <h3>Benefits of Choosing Crystal Clean Sydney:</h3>
+            <ul>
+                <li><strong>Customised Cleaning Plan:</strong> We tailor our cleaning services to meet the specific
+                    needs of your property, ensuring every detail is addressed.</li>
+                <li><strong>Attention to Detail:</strong> Our team goes beyond surface cleaning to ensure every corner
+                    is free of dust and debris, creating a clean and welcoming space.</li>
+                <li><strong>Safe and Effective Products:</strong> We use non-toxic, eco-friendly cleaning products that
+                    are safe for both the environment and the people occupying the space.</li>
+                <li><strong>Fast and Efficient Service:</strong> We work quickly to ensure your property is move-in
+                    ready as soon as possible without compromising on quality.</li>
+            </ul>
+
+            <div class="single-service-last">
+                <p>Transform your construction site into a clean, inviting environment with Crystal Clean Sydney. <strong>Contact us today</strong> to learn more about our Post Construction Cleaning services and how we can help get your property ready for its next chapter.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

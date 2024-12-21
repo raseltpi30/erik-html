@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .single-service {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .single-service::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .single-service h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            z-index: 2;
+        }
+
+        .single-box {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px 40px;
+            width: 80%;
+            margin: -50px auto 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        .single-box p {
+            font-size: 18px;
+            color: #000;
+        }
+
+        .single-box li {
+            line-height: 25px;
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .single-service h1 {
+                font-size: 2rem;
+                text-align: center;
+            }
+
+            .single-box {
+                padding: 15px;
+                width: unset;
+                margin: unset;
+            }
+
+            .single-box p {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="single-service"
+        style="background-image: url('https://static1.squarespace.com/static/6682192d1022a0098a1c29d9/t/66bf31e4ba8584418624bb5e/1723806196231/Deep+Cleaning.jpg');">
+        <h1>Deep Cleaning</h1>
+    </div>
+
+    <div class="single-box">
+        <div class="single-service-content">
+            <h2>Deep Cleaning Services</h2>
+            <p>Our Deep Cleaning service at Crystal Clean Sydney is designed for areas that need extra attention beyond
+                what regular maintenance covers. This service is perfect for ensuring every part of your space is
+                thoroughly refreshed.</p>
+
+            <h3>What We Offer:</h3>
+            <ul>
+                <li><strong>All Standard Cleaning Tasks +</strong></li>
+                <ul>
+                    <li><strong>Furniture Care:</strong> Carefully wipe down furniture and vacuum underneath
+                        (limitations on
+                        lifting heavy furniture apply), targeting dust and debris.</li>
+                    <li><strong>Spot Cleaning:</strong> Detailed cleaning of all door frames and facings to remove
+                        fingerprints and other marks.</li>
+                    <li><strong>Vigorous Baseboard Cleaning:</strong> We vigorously vacuum baseboards to eliminate all
+                        accumulated dust, ensuring that no spot is overlooked.</li>
+                </ul>
+            </ul>
+            <div class="single-service-last">
+                <p><strong>Ideal for Special Occasions:</strong>Whether preparing for a special event or needing a
+                    seasonal deep clean, our Deep Cleaning services ensure that every part of your home shines. This
+                    thorough cleaning makes your space feel brand new, providing a deeply sanitized, clean, and
+                    refreshing environment.</li>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

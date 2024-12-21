@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 40px;
+        }
+
+        .features a {
+            text-decoration: none;
+        }
+
+        .feature {
+            background-color: #fff;
+            border: 1px solid #608983;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+            min-height: 250px;
+        }
+
+        .feature img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            margin-bottom: 20px;
+        }
+
+        .feature h3 {
+            font-size: 1rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            color: #333;
+        }
+
+        .feature p {
+            font-size: 0.9rem;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        /* Feature item styles to manage borders */
+        .feature.item-1 {
+            border-top: none;
+            border-left: none;
+        }
+
+        .feature.item-2 {
+            border-top: none;
+        }
+
+        .feature.item-3 {
+            border-top: none;
+            border-right: none;
+        }
+
+        .feature.item-4 {
+            border-bottom: none;
+            border-left: none;
+        }
+
+        .feature.item-5 {
+            border-bottom: none;
+        }
+
+        .feature.item-6 {
+            border-bottom: none;
+            border-right: none;
+        }
+
+        .feature-container {
+            max-width: 90%;
+            margin: 0 auto;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .features {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                padding: 40px;
+            }
+
+            .feature.item-1 {
+                border-top: none;
+                border-left: none;
+            }
+
+            .feature.item-2 {
+                border-top: none;
+                border-right: none;
+            }
+
+            .feature.item-3 {
+                border-left: none;
+                border-top: 1px solid #608983;
+                border-right: 1px solid #608983;
+            }
+
+            .feature.item-4 {
+                border-left: 1px solid #608983;
+                border-bottom: 1px solid #608983;
+                border-right: none;
+            }
+
+            .feature.item-5 {
+                border-left: none;
+                border-bottom: none;
+            }
+
+            .feature.item-6 {
+                border-bottom: none;
+                border-right: none;
+            }
+        }
+
+        /* Media Queries for responsiveness */
+        @media screen and (max-width: 767px) {
+            .feature-container {
+                width: 100%;
+                margin: 0 20px;
+            }
+
+            .features {
+                padding: 0;
+            }
+
+            .feature h3 {
+                font-size: 1rem;
+                /* Further decrease font size for small devices */
+            }
+
+            .feature p {
+                font-size: 0.85rem;
+                /* Adjust text for small screens */
+            }
+
+            .feature img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        @media screen and (max-width: 576px) {
+            .features {
+                grid-template-columns: 1fr;
+                /* Ensure one column on extra small devices */
+                padding: 10px;
+            }            
+
+            .feature{
+                border: 1px solid #608983 !important;
+                min-height: 220px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="feature-container">
+        <section class="features">
+            <a href="#time-saving">
+                <div class="feature item-1">
+                    <img src="https://via.placeholder.com/60" alt="Saves You Time">
+                    <h3>SAVES YOU TIME</h3>
+                    <p>We help you live smarter, giving you time to focus on what’s most important.</p>
+                </div>
+            </a>
+            <a href="#safety">
+                <div class="feature item-2">
+                    <img src="https://via.placeholder.com/60" alt="Safety First">
+                    <h3>SAFETY FIRST</h3>
+                    <p>We rigorously vet all of our cleaning professionals, who undergo criminal record checks and
+                        complete test cleans before we send them to your home or office.</p>
+                </div>
+            </a>
+            <a href="#quality">
+                <div class="feature item-3">
+                    <img src="https://via.placeholder.com/60" alt="Only the Best Quality">
+                    <h3>ONLY THE BEST QUALITY</h3>
+                    <p>We guarantee our cleaning services. If you're not happy, we will come out and re-clean it for
+                        free.</p>
+                </div>
+            </a>
+            <a href="#easy-booking">
+                <div class="feature item-4">
+                    <img src="https://via.placeholder.com/60" alt="Clean is Just a Click Away">
+                    <h3>CLEAN IS JUST A CLICK AWAY</h3>
+                    <p>Select the number of bedrooms and bathrooms in your home. Pick a date. Book your cleaning service
+                        online or over the phone. Easy!</p>
+                </div>
+            </a>
+            <a href="#communication">
+                <div class="feature item-5">
+                    <img src="https://via.placeholder.com/60" alt="Seamless Communication">
+                    <h3>SEAMLESS COMMUNICATION</h3>
+                    <p>Online communication makes it easy for you to stay in touch with your cleaners.</p>
+                </div>
+            </a>
+            <a href="#payment">
+                <div class="feature item-6">
+                    <img src="https://via.placeholder.com/60" alt="Cash-Free Payment">
+                    <h3>CASH-FREE PAYMENT</h3>
+                    <p>Pay securely online only when the cleaning service is complete.</p>
+                </div>
+            </a>
+        </section>
+    </div>
+</body>
+
+</html>
